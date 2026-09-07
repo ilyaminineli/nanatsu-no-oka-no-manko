@@ -17,6 +17,10 @@
   }
   tabs.forEach(tab => tab.addEventListener('click', () => showSide(tab.dataset.side)));
 
+  // Turn the loose observation into a proper archived paper slip using the existing design system.
+  const deskNote = document.querySelector('.desk-note');
+  if (deskNote) deskNote.classList.add('loose-label', 'label-black');
+
   function stopAll() {
     [...audioEls, masterAudio].filter(Boolean).forEach(a => { a.pause(); a.currentTime = 0; });
     document.querySelectorAll('.track.active,.record-row.active').forEach(el => el.classList.remove('active'));
@@ -26,7 +30,7 @@
   audioEls.forEach(audio => {
     const row = audio.closest('.track');
     audio.addEventListener('play', () => {
-      audioEls.forEach(other => { if (other !== audio) { other.pause(); } });
+      audioEls.forEach(other => { if (other !== audio) other.pause(); });
       document.querySelectorAll('.track.active').forEach(el => el.classList.remove('active'));
       row?.classList.add('active');
       if (status) status.textContent = `PLAYING / ${row?.querySelector('h3')?.textContent || 'UNKNOWN'}`;
@@ -50,8 +54,7 @@
 
   allPlayButtons.forEach(btn => btn.addEventListener('click', () => {
     if (!masterAudio) return;
-    const src = btn.dataset.src;
-    masterAudio.src = encodeURI(src || '');
+    masterAudio.src = encodeURI(btn.dataset.src || '');
     allPlayButtons.forEach(b => b.closest('.record-row')?.classList.remove('active'));
     btn.closest('.record-row')?.classList.add('active');
     masterAudio.play().catch(() => {});
@@ -61,12 +64,15 @@
 
   document.querySelector('#stop-all')?.addEventListener('click', stopAll);
   document.querySelector('#rewind')?.addEventListener('click', () => {
-    const a = masterAudio; if (a) a.currentTime = Math.max(0, a.currentTime - 10);
+    if (masterAudio) masterAudio.currentTime = Math.max(0, masterAudio.currentTime - 10);
   });
   document.querySelector('#fast-forward')?.addEventListener('click', () => {
-    const a = masterAudio; if (a) a.currentTime = Math.min(a.duration || a.currentTime + 10, a.currentTime + 10);
+    if (masterAudio) masterAudio.currentTime = Math.min(masterAudio.duration || masterAudio.currentTime + 10, masterAudio.currentTime + 10);
   });
-  masterAudio?.addEventListener('ended', () => { if (status) status.textContent = 'STANDBY'; document.querySelectorAll('.record-row.active').forEach(x => x.classList.remove('active')); });
+  masterAudio?.addEventListener('ended', () => {
+    if (status) status.textContent = 'STANDBY';
+    document.querySelectorAll('.record-row.active').forEach(x => x.classList.remove('active'));
+  });
 
   document.querySelectorAll('.reveal-note').forEach(btn => btn.addEventListener('click', () => {
     const out = btn.parentElement.querySelector('.secret-note');
