@@ -2,13 +2,15 @@
 
 **M7 / Archive Series**
 
-A small denpa music project built around the synthetic voice **電性 (Densei)** and a fictional collection of mysterious microcassette recordings.
+A denpa music project built around the synthetic voice **電性 (Densei)** and a fictional collection of partially recovered microcassette recordings.
 
-The project treats ordinary things as if they have private systems, habits and impossible bureaucracies: sleeping utility poles, endless microphone tests, quiet noise, errors that behave like songs. The music is deliberately playful, strange, tactile and slightly unreliable rather than conventional horror.
+The records are not presented as conventional songs or a clean horror narrative. They behave like ordinary observations that have slipped into the wrong filing system: sleeping utility poles, unfinished tests, quiet noise, errors, reflections, absurd instructions and a voice that calmly reports everything.
+
+The website is designed as a physical archive to investigate. Documents contradict each other, missing records are referenced as if they were present, and the visitor can uncover small pieces of a story by counting, opening, inspecting and following the wrong references.
 
 ## 音１ / M7-001
 
-Nine recordings arranged as two sides of a physical microcassette release:
+Nine recordings arranged as two sides of a microcassette release:
 
 ### SIDE 1
 
@@ -27,8 +29,8 @@ Nine recordings arranged as two sides of a physical microcassette release:
 
 ## Archive language
 
-The visual identity uses black, warm paper, distressed red ink, stamps, labels, barcodes, geometric marks and imperfect registration. The recurring symbols suggest hills, sources, tape, noise, missing data and archive numbers.
+The visual identity uses black, warm paper, distressed red ink, Japanese document typography, stamps, labels, barcodes, small photographic/tape fragments and geometric symbols. Small supplied PNGs are intentionally used as physical evidence or tiled surfaces rather than enlarged into low-resolution backgrounds.
 
-The website is intentionally presented as an object to investigate rather than a conventional artist page. Track playback, field notes, fragments, archive indexes and small interactive clues hint at a story without explaining everything.
+The public site is divided into **Home / Archive / Playback / Fragments**, with a restricted **Drawer 07** reached through an exploratory quest. Some clues are persistent in local storage so the archive remembers previous handling.
 
 **The archive has no official beginning. Somebody pressed REC. Nobody pressed STOP.**
