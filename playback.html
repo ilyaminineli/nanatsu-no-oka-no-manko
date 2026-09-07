@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>M7 — PLAYBACK ROOM</title><meta name="description" content="M7 playback room — audio records from the 音１ microcassette archive.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="playback-page">
+<header class="site-header">
+<a class="brand" href="index.html"><img src="images/logo_small.png" alt=""><span>M7 / ARCHIVE SERIES</span></a>
+<nav class="nav"><a href="index.html">01 HOME</a><a href="archive.html">02 ARCHIVE</a><a class="active" href="playback.html">03 PLAYBACK</a><a href="fragments.html">04 FRAGMENTS</a></nav><div class="header-code">PLAYBACK / MC-15</div>
+</header>
+<main class="page-shell">
+<section class="console-head sheet">
+<div class="document-meta"><span>PLAYBACK ROOM</span><span>M7-001</span><span>DEVICE / XB15</span></div>
+<h1>音１</h1><p class="lead">Do not expect the records to explain themselves. Play them in the order written.</p>
+<div class="console-status"><span class="lamp"></span><span id="playback-status">READY / NO SIGNAL</span><span class="status-rule"></span><span>TYPE I / 1.2cm/s</span></div>
+</section>
+<section class="player-console">
+<div class="machine">
+<div class="machine-top"><span>OLYMPUS XB15</span><span>MICROCASSETTE / MC-15</span><span>M7-001</span></div>
+<div class="machine-window"><div class="reel-display left"><i></i></div><div class="signal-window"><div class="signal-line"></div><div class="signal-line faint"></div><div class="signal-line"></div><div class="time-readout" id="timecode">00:00 / 00:00</div></div><div class="reel-display right"><i></i></div></div>
+<div class="machine-controls"><button id="stop-all" class="machine-btn">STOP</button><button id="rewind" class="machine-btn">REW</button><button id="fast-forward" class="machine-btn">FF</button><span class="machine-led">● RECORDING ARCHIVE</span></div>
+</div>
+<div class="record-list">
+<div class="list-head"><span>INDEX</span><span>TITLE</span><span>SIDE</span><span>LOAD</span></div>
+<div class="record-row" id="01"><span>01</span><strong>電柱は寝ている</strong><span>A</span><button class="load-record" data-src="MP3/1. 電柱は寝ている.mp3" data-title="電柱は寝ている">PLAY</button></div>
+<div class="record-row" id="02"><span>02</span><strong>終わらないテスト</strong><span>A</span><button class="load-record" data-src="MP3/2. 終わらないテスト.mp3" data-title="終わらないテスト">PLAY</button></div>
+<div class="record-row" id="03"><span>03</span><strong>静かなノイズ</strong><span>A</span><button class="load-record" data-src="MP3/5. 静かなノイズ.mp3" data-title="静かなノイズ">PLAY</button></div>
+<div class="record-row" id="04"><span>04</span><strong>うつるもの</strong><span>A</span><button class="load-record" data-src="MP3/6. うつるもの.mp3" data-title="うつるもの">PLAY</button></div>
+<div class="record-row" id="05"><span>05</span><strong>音１</strong><span>A</span><button class="load-record" data-src="MP3/9. 音１.mp3" data-title="音１">PLAY</button></div>
+<div class="side-divider"><span>SIDE 2</span></div>
+<div class="record-row" id="06"><span>06</span><strong>エラー777</strong><span>B</span><button class="load-record" data-src="MP3/3. エラー777.mp3" data-title="エラー777">PLAY</button></div>
+<div class="record-row" id="07"><span>07</span><strong>電柱のうた</strong><span>B</span><button class="load-record" data-src="MP3/7. 電柱のうた.mp3" data-title="電柱のうた">PLAY</button></div>
+<div class="record-row" id="08"><span>08</span><strong>音3</strong><span>B</span><button class="load-record" data-src="MP3/4. 音3.mp3" data-title="音3">PLAY</button></div>
+<div class="record-row" id="09"><span>09</span><strong>トミノの地獄</strong><span>B</span><button class="load-record" data-src="MP3/8. トミノ的地獄,.mp3" data-title="トミノの地獄">PLAY</button></div>
+</div>
+<audio id="master-audio" preload="metadata"></audio>
+</section>
+<section class="playback-notes">
+<article class="paper-note"><span>LISTENING NOTE / 01</span><h2>電柱は寝ている。</h2><p>There is no proof that a utility pole has ever slept. This is not considered a problem.</p></article>
+<article class="paper-note red-paper"><span>WARNING / 09</span><h2>トミノの地獄</h2><p>Do not adjust the volume after playback has begun. The instruction may have been added later.</p></article>
+</section>
+</main><footer class="site-footer"><span>七つの丘のマンコ</span><span>PLAYBACK ROOM</span><span>M7-001</span><span>◎</span></footer>
+<script src="script.js" defer></script>
+</body></html>
