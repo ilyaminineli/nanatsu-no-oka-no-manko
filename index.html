@@ -1,11 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="七つの丘のマンコ — 音１ / M7-001 Archive Series. Experimental microcassette recordings featuring 電性.">
+  <title>七つの丘のマンコ — 音１</title>
+  <link rel="preload" as="image" href="images/logo_large.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="七つの丘のマンコ home">
+      <img src="images/logo_small.png" alt="">
+      <span>M7 / ARCHIVE SERIES</span>
+    </a>
+    <nav class="nav" aria-label="Archive navigation">
+      <a href="#record">RECORD</a>
+      <a href="#tracks">TRACKS</a>
+      <a href="#notes">NOTES</a>
+    </nav>
+    <div class="header-code">M7—001</div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">RECOVERED AUDIO MATERIAL / MICROCASSETTE MC-15</div>
+        <h1>音１</h1>
+        <div class="hero-sub">七つの丘のマンコ</div>
+        <p class="hero-note">A small collection of sounds, tests, transmissions and things that were probably already there.</p>
+        <div class="stamp-row">
+          <span class="stamp">M7-001</span>
+          <span class="stamp red">RECOVERED</span>
+          <span class="stamp">電性</span>
+        </div>
+      </div>
+
+      <div class="cassette-stage" aria-label="M7-001 microcassette">
+        <div class="microcassette">
+          <div class="cassette-label">
+            <div class="cassette-top"><span>OLYMPUS</span><span>MC-15</span></div>
+            <div class="cassette-title">七つの丘のマンコ</div>
+            <div class="cassette-title-small">音１</div>
+            <div class="reels">
+              <span class="reel"><i></i></span>
+              <span class="tape-window"></span>
+              <span class="reel"><i></i></span>
+            </div>
+            <div class="cassette-bottom"><span>SIDE 1</span><span>M7-001</span></div>
+          </div>
+        </div>
+        <div class="stage-caption">OLYMPUS XB15 / MC-15 · TYPE I · ARCHIVE 004 / 077</div>
+      </div>
+    </section>
+
+    <section id="record" class="artifact-section wrap">
+      <div class="section-tag">01 / MATERIAL</div>
+      <div class="artifact-grid">
+        <figure class="paper artifact-main">
+          <div class="paper-head"><span>ARCHIVE INSERT</span><span>M7-001</span></div>
+          <img src="images/cassette layout.jpg" alt="Microcassette insert artwork for 音１">
+          <figcaption>Original cassette insert / assembled archive material.</figcaption>
+        </figure>
+
+        <aside class="paper specimen">
+          <div class="specimen-label">FIELD NOTE / 001</div>
+          <h2>音だけ残る。</h2>
+          <p>Recorded voices, ordinary machines, electrical hum, absurd little observations.</p>
+          <div class="rule"></div>
+          <dl>
+            <div><dt>VOICE</dt><dd>電性</dd></div>
+            <div><dt>FORMAT</dt><dd>Microcassette</dd></div>
+            <div><dt>SOURCE</dt><dd>Olympus MC-15</dd></div>
+            <div><dt>STATUS</dt><dd>Recovered</dd></div>
+          </dl>
+          <div class="red-mark">● REC</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="tracks" class="tracks-section wrap">
+      <div class="section-tag">02 / PLAYBACK LOG</div>
+      <div class="tracks-shell paper">
+        <div class="track-header">
+          <div><div class="micro">M7-001 / 音１</div><h2>PLAYBACK LOG</h2></div>
+          <div class="side-tabs" role="tablist" aria-label="Cassette sides">
+            <button class="side-tab active" data-side="A" role="tab" aria-selected="true">SIDE 1</button>
+            <button class="side-tab" data-side="B" role="tab" aria-selected="false">SIDE 2</button>
+          </div>
+        </div>
+
+        <div class="track-side" data-side-panel="A">
+          <div class="side-heading"><span>A</span><strong>SIDE 1</strong><em>5 RECORDS</em></div>
+          <div class="track-list">
+            <article class="track" data-track="1"><div class="track-no">01</div><div class="track-info"><h3>電柱は寝ている</h3><p>The utility pole is sleeping.</p></div><audio controls preload="none" src="MP3/1. 電柱は寝ている.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="2"><div class="track-no">02</div><div class="track-info"><h3>終わらないテスト</h3><p>The test never ends.</p></div><audio controls preload="none" src="MP3/2. 終わらないテスト.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="3"><div class="track-no">03</div><div class="track-info"><h3>静かなノイズ</h3><p>Quiet noise.</p></div><audio controls preload="none" src="MP3/5. 静かなノイズ.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="4"><div class="track-no">04</div><div class="track-info"><h3>うつるもの</h3><p>Things that transmit / reflect.</p></div><audio controls preload="none" src="MP3/6. うつるもの.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="5"><div class="track-no">05</div><div class="track-info"><h3>音１</h3><p>Sound One.</p></div><audio controls preload="none" src="MP3/9. 音１.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+          </div>
+        </div>
+
+        <div class="track-side hidden" data-side-panel="B">
+          <div class="side-heading"><span>B</span><strong>SIDE 2</strong><em>4 RECORDS</em></div>
+          <div class="track-list">
+            <article class="track" data-track="6"><div class="track-no">06</div><div class="track-info"><h3>エラー777</h3><p>ERROR 777.</p></div><audio controls preload="none" src="MP3/3. エラー777.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="7"><div class="track-no">07</div><div class="track-info"><h3>電柱のうた</h3><p>Song of the utility pole.</p></div><audio controls preload="none" src="MP3/7. 電柱のうた.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="8"><div class="track-no">08</div><div class="track-info"><h3>音3</h3><p>Sound Three.</p></div><audio controls preload="none" src="MP3/4. 音3.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+            <article class="track" data-track="9"><div class="track-no">09</div><div class="track-info"><h3>トミノの地獄</h3><p>Final record; archive filename preserved.</p></div><audio controls preload="none" src="MP3/8. トミノ的地獄,.mp3"></audio><button class="load-track" type="button">LOAD</button></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes" class="notes-section wrap">
+      <div class="section-tag">03 / NOTES</div>
+      <div class="notes-grid">
+        <article class="paper note-card rotated-left"><span class="note-code">OBSERVATION 04</span><h3>電柱は寝ている。</h3><p>It does not close its eyes.</p><p>It still sleeps.</p><div class="scribble">/////</div></article>
+        <article class="paper note-card"><span class="note-code">M7 INTERNAL</span><h3>再生は停止しても<br>記録は残る。</h3><p>There is no requirement to understand the recording before preserving it.</p><div class="red-stamp">CONFIDENTIAL</div></article>
+        <article class="paper note-card rotated-right"><span class="note-code">UNKNOWN</span><h3>電性</h3><p>Voice / source uncertain.</p><p>Transmission apparently stable.</p><div class="symbol">◎</div></article>
+      </div>
+    </section>
+
+    <section class="closing wrap">
+      <div class="closing-line"></div>
+      <img class="closing-logo" src="images/logo_large.png" alt="七つの丘のマンコ">
+      <p>M7 ARCHIVE SERIES / M7-001 / 音１</p>
+      <p class="tiny">The archive has no official beginning. This tape was found already recording.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>七つの丘のマンコ</span><span>音１</span><span>電性</span><span>M7-001</span><span>◎</span></footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
